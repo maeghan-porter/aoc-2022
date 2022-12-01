@@ -1,9 +1,8 @@
 #!/usr/bin/env python3
 with open("./input.txt", "r") as f:
-  input = f.read()
   elves = []
   total = 0
-  for line in input.split("\n"):
+  for line in f.readlines():
     try:
       total += int(line)
     except Exception as e:
